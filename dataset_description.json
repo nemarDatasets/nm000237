@@ -1,0 +1,40 @@
+{
+	"Name": "7-day motor imagery BCI EEG dataset from Zhou et al 2021",
+	"BIDSVersion": "1.9.0",
+	"HEDVersion": "8.4.0",
+	"DatasetType": "derivative",
+	"License": "CC-BY-4.0",
+	"Authors": [
+		"Qing Zhou",
+		"Jiafan Lin",
+		"Lin Yao",
+		"Yueming Wang",
+		"Yan Han",
+		"Kedi Xu"
+	],
+	"ReferencesAndLinks": [
+		"https://zenodo.org/records/18988317"
+	],
+	"GeneratedBy": [
+		{
+			"CodeURL": "https://github.com/NeuroTechX/moabb",
+			"Name": "moabb",
+			"Description": "Mother of All BCI Benchmarks",
+			"Version": "1.5.0"
+		}
+	],
+	"SourceDatasets": [
+		{
+			"DOI": "10.3389/fnhum.2021.701091",
+			"URL": "https://zenodo.org/records/18988317"
+		}
+	],
+	"Keywords": [
+		"Healthy",
+		"Motor",
+		"Research",
+		"imagery",
+		"research"
+	],
+	"PublicationYear": 2021
+}

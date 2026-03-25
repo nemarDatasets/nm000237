@@ -1,0 +1,144 @@
+_dataset:
+  class: Zhou2020
+  code: Zhou2020
+  doi: 10.3389/fnhum.2021.701091
+  interval:
+  - 0
+  - 5
+  n_subjects: 20
+  paradigm: imagery
+acquisition:
+  channel_types:
+    eeg: 41
+  filters:
+    bandpass:
+    - 0.5
+    - 100
+    notch_hz: 50
+  ground: AFz
+  hardware: Neuroscan SynAmps2
+  line_freq: 50.0
+  montage: standard_1005
+  n_channels: 41
+  reference: vertex (Cz)
+  sampling_rate: 500.0
+  sensor_type: Ag/AgCl
+  sensors:
+  - F3
+  - F1
+  - Fz
+  - F2
+  - F4
+  - FC5
+  - FC3
+  - FC1
+  - FCz
+  - FC2
+  - FC4
+  - FC6
+  - C5
+  - C3
+  - C1
+  - Cz
+  - C2
+  - C4
+  - C6
+  - CP5
+  - CP3
+  - CP1
+  - CPz
+  - CP2
+  - CP4
+  - CP6
+bci_application:
+  applications:
+  - research
+  environment: laboratory
+cross_validation:
+  cv_folds: 10
+  cv_method: 10-fold
+  evaluation_type:
+  - within_session
+data_processed: true
+data_structure:
+  n_trials: 33600
+  trials_context: 20 subjects x 7 sessions x 6 runs x 40 trials = 33600
+documentation:
+  country: CN
+  data_url: https://zenodo.org/records/18988317
+  doi: 10.3389/fnhum.2021.701091
+  institution: Zhejiang University
+  investigators:
+  - Qing Zhou
+  - Jiafan Lin
+  - Lin Yao
+  - Yueming Wang
+  - Yan Han
+  - Kedi Xu
+  license: CC-BY-4.0
+  publication_year: 2021
+  repository: Zenodo
+experiment:
+  class_labels:
+  - left_hand
+  - right_hand
+  - feet
+  - rest
+  events:
+    feet: 3
+    left_hand: 1
+    rest: 4
+    right_hand: 2
+  feedback_type: none
+  mode: offline
+  n_classes: 4
+  paradigm: imagery
+  primary_modality: visual
+  stimulus_modalities:
+  - visual
+  stimulus_type: arrow cues
+  study_design: '7-day longitudinal MI-BCI study without feedback training. 4 classes: left hand, right hand, both feet, idle'
+  synchronicity: synchronous
+  trial_duration: 5.0
+file_format: NPZ
+paradigm_specific:
+  detected_paradigm: motor_imagery
+  imagery_duration_s: 5.0
+  imagery_tasks:
+  - left_hand
+  - right_hand
+  - feet
+  - rest
+participants:
+  age_max: 27
+  age_mean: 23.2
+  age_min: 21
+  age_std: 1.47
+  bci_experience: mixed
+  gender:
+    female: 9
+    male: 11
+  handedness: right-handed
+  health_status: healthy
+  n_subjects: 20
+  species: human
+runs_per_session: 6
+sessions_per_subject: 7
+signal_processing:
+  classifiers:
+  - SVM
+  feature_extraction:
+  - CSP
+  frequency_bands:
+    classification:
+    - 8.0
+    - 30.0
+  spatial_filters:
+  - CSP
+tags:
+  modality:
+  - Motor
+  pathology:
+  - Healthy
+  type:
+  - Research
