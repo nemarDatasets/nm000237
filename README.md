@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.nm000237-blue)](https://doi.org/10.82901/nemar.nm000237)
+
 # 7-day motor imagery BCI EEG dataset from Zhou et al 2021
 
 7-day motor imagery BCI EEG dataset from Zhou et al 2021.
