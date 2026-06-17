@@ -1,0 +1,81 @@
+{
+  "version": "2.0",
+  "pipeline_stage": "validated",
+  "authors": {
+    "Qing Zhou": {},
+    "Jiafan Lin": {},
+    "Lin Yao": {},
+    "Yueming Wang": {},
+    "Yan Han": {},
+    "Kedi Xu": {}
+  },
+  "related_identifiers": [
+    {
+      "identifier": "10.3389/fnhum.2021.701091",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/nm000237",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=nm000237",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.21105/joss.01896",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "10.1038/s41597-019-0104-8",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    }
+  ],
+  "title": "7-day motor imagery BCI EEG dataset from Zhou et al 2021",
+  "license": "CC-BY-4.0",
+  "dataset_type": "derivative",
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "eeg"
+  ],
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "17.1 GB (834 files)"
+  ],
+  "formats": [
+    ".bdf",
+    ".json",
+    ".md",
+    ".tsv",
+    ".yaml",
+    ".yml"
+  ],
+  "description": "A 7-day longitudinal motor imagery brain-computer interface (BCI) EEG dataset comprising 20 healthy participants performing four imagery tasks (left hand, right hand, both feet, and rest) across 7 sessions. The dataset contains 33,600 trials recorded at 500 Hz from 41 EEG channels using a Neuroscan SynAmps2 system with visual arrow cue stimulation. Data were preprocessed and annotated with HED 8.4.0 tags, supporting BCI research and algorithm development for motor imagery decoding.",
+  "methods_description": "EEG data were acquired at 500 Hz sampling rate from 41 channels using a Neuroscan SynAmps2 system with Ag/AgCl sensors referenced to vertex (Cz) and grounded at AFz. Online bandpass filtering (0.5-100 Hz) and 50 Hz notch filtering were applied. Participants performed four motor imagery tasks (left hand, right hand, feet, rest) cued by visual arrows in a synchronous, offline paradigm without feedback. Each session consisted of 6 runs with 40 trials per run, yielding 240 trials per session across 7 sessions per subject.",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "motor imagery"
+    },
+    {
+      "term": "brain-computer interfaces"
+    },
+    {
+      "term": "longitudinal study"
+    },
+    {
+      "term": "common spatial patterns"
+    },
+    {
+      "term": "support vector machines"
+    }
+  ],
+  "source_hash": "c0fd517dbbd6a480c209ed4b98696b79a7ce3aa9101d187a77e8e1a071708916"
+}
