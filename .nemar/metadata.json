@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "7-day motor imagery BCI EEG dataset from Zhou et al 2021",
-  "description": "A 7-day longitudinal motor imagery brain-computer interface (BCI) EEG dataset comprising 20 healthy participants performing four imagery tasks (left hand, right hand, feet, and rest) across 7 sessions. The dataset contains 33,600 trials recorded at 500 Hz from 41 EEG channels using a Neuroscan SynAmps2 system. Data have been preprocessed and organized in BIDS format using MOABB, suitable for BCI algorithm development and motor imagery decoding research.",
-  "methods_description": "EEG data were acquired at 500 Hz sampling rate from 41 channels using a Neuroscan SynAmps2 system with Ag/AgCl sensors referenced to vertex (Cz) and grounded at AFz. Online filtering included bandpass (0.5-100 Hz) and 50 Hz notch filtering. Participants performed motor imagery tasks cued by visual arrow stimuli in a synchronous, offline paradigm without feedback. Each session consisted of 6 runs with 40 trials per run, yielding 5-second trial intervals.",
+  "description": "This dataset contains EEG recordings from 20 healthy participants performing a 7-day longitudinal motor imagery brain-computer interface (BCI) task without feedback. Each subject completed 7 sessions of 6 runs, imagining left hand, right hand, feet, and rest movements, yielding 33,600 trials in total. The dataset was converted to BIDS format from the original study by Zhou et al. (2021) examining the relationship between relative power and motor imagery decoding performance across time and subjects.",
+  "methods_description": "EEG was recorded using a Neuroscan SynAmps2 system with 41 Ag/AgCl electrodes referenced to vertex (Cz) and grounded at AFz, sampled at 500 Hz with online bandpass (0.5-100 Hz) and notch (50 Hz) filtering. Participants performed 7 sessions of 6 runs each, imagining left hand, right hand, feet movements, or rest, with 5-second trial intervals cued visually via arrows.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -16,36 +16,22 @@
   },
   "keywords": [
     {
-      "term": "EEG",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+      "term": "EEG"
     },
     {
-      "term": "motor imagery",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D019018"
+      "term": "motor imagery"
     },
     {
-      "term": "Brain-Computer Interfaces",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
+      "term": "brain-computer interface"
     },
     {
-      "term": "longitudinal study",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D008137"
-    },
-    {
-      "term": "signal processing"
+      "term": "longitudinal study"
     },
     {
       "term": "common spatial patterns"
     },
     {
-      "term": "healthy"
-    },
-    {
-      "term": "research"
+      "term": "support vector machine"
     }
   ],
   "related_identifiers": [
@@ -93,5 +79,5 @@
     ".yml",
     ".zip"
   ],
-  "source_hash": "b881d3511755a7c315e65a69fee73f670775cd1aec76e671b0cd1ceec2a5ccaf"
+  "source_hash": "87c9b377852b625e89103971b4750045ee79c3d25ed6fec536c026c0c192bf5f"
 }
