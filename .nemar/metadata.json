@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "7-day motor imagery BCI EEG dataset from Zhou et al 2021",
-  "description": "This dataset contains EEG recordings from 20 healthy participants performing a 7-day longitudinal motor imagery brain-computer interface (BCI) task without feedback. Each subject completed 7 sessions of 6 runs, imagining left hand, right hand, feet, and rest movements, yielding 33,600 trials in total. The dataset was converted to BIDS format from the original study by Zhou et al. (2021) examining the relationship between relative power and motor imagery decoding performance across time and subjects.",
-  "methods_description": "EEG was recorded using a Neuroscan SynAmps2 system with 41 Ag/AgCl electrodes referenced to vertex (Cz) and grounded at AFz, sampled at 500 Hz with online bandpass (0.5-100 Hz) and notch (50 Hz) filtering. Participants performed 7 sessions of 6 runs each, imagining left hand, right hand, feet movements, or rest, with 5-second trial intervals cued visually via arrows.",
+  "description": "A longitudinal motor imagery brain-computer interface EEG dataset in which 20 healthy participants each completed seven sessions on separate days without feedback training. Four classes were recorded (left hand, right hand, both feet, rest) with a 41-channel Neuroscan system at 500 Hz, yielding 33,600 trials. The dataset supports research on the stability of motor imagery decoding across days and subjects.",
+  "methods_description": "EEG was recorded with a Neuroscan SynAmps2 amplifier (Ag/AgCl electrodes, 500 Hz, 0.5-100 Hz bandpass, 50 Hz notch, Cz reference, AFz ground). Each session had 6 runs of 40 trials. Trials used visual arrow cues and 5 s of imagery without feedback. Benchmark analysis used CSP features with an SVM classifier in 8-30 Hz and 10-fold within-session cross-validation.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -22,7 +22,10 @@
       "term": "motor imagery"
     },
     {
-      "term": "brain-computer interface"
+      "term": "Brain-Computer Interfaces",
+      "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
     },
     {
       "term": "longitudinal study"
@@ -31,7 +34,7 @@
       "term": "common spatial patterns"
     },
     {
-      "term": "support vector machine"
+      "term": "multi-session"
     }
   ],
   "related_identifiers": [
@@ -67,7 +70,7 @@
     "eeg"
   ],
   "sizes": [
-    "100.0 GB (1687 files)"
+    "93.10 GB (1687 files)"
   ],
   "formats": [
     ".bdf",
