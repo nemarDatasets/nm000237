@@ -1,3 +1,3 @@
 {
-	"Description": "Channel information (41 EEG channels)."
+	"Description": "Channel information (45 EEG, EOG, MISC channels). Original recording also included 2 EOG."
 }
