@@ -10,6 +10,7 @@ _dataset:
 acquisition:
   channel_types:
     eeg: 41
+    eog: 2
   filters:
     bandpass:
     - 0.5
@@ -19,7 +20,6 @@ acquisition:
   hardware: Neuroscan SynAmps2
   line_freq: 50.0
   montage: standard_1005
-  n_channels: 41
   reference: vertex (Cz)
   sampling_rate: 500.0
   sensor_type: Ag/AgCl
@@ -50,6 +50,21 @@ acquisition:
   - CP2
   - CP4
   - CP6
+  - F5
+  - AF3
+  - AF4
+  - P5
+  - P3
+  - P1
+  - Pz
+  - P2
+  - P4
+  - P6
+  - PO3
+  - POz
+  - PO4
+  - Oz
+  - F6
 bci_application:
   applications:
   - research
