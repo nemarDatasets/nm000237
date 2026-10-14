@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "7-day motor imagery BCI EEG dataset from Zhou et al 2021",
-  "description": "A longitudinal motor imagery brain-computer interface EEG dataset in which 20 healthy participants each completed seven sessions on separate days without feedback training. Four classes were recorded (left hand, right hand, both feet, rest) with a 41-channel Neuroscan system at 500 Hz, yielding 33,600 trials. The dataset supports research on the stability of motor imagery decoding across days and subjects.",
-  "methods_description": "EEG was recorded with a Neuroscan SynAmps2 amplifier (Ag/AgCl electrodes, 500 Hz, 0.5-100 Hz bandpass, 50 Hz notch, Cz reference, AFz ground). Each session had 6 runs of 40 trials. Trials used visual arrow cues and 5 s of imagery without feedback. Benchmark analysis used CSP features with an SVM classifier in 8-30 Hz and 10-fold within-session cross-validation.",
+  "description": "A longitudinal EEG dataset of motor imagery brain-computer interface (MI-BCI) recordings from 20 healthy participants across 7 sessions on separate days, without feedback training. Participants imagined left-hand, right-hand and both-feet movements, or rested, in response to visual arrow cues. EEG was recorded at 500 Hz with a Neuroscan SynAmps2 amplifier (41 EEG channels plus 2 EOG channels), yielding 33,600 trials. The data are provided in BIDS format with HED event annotations, regenerated via the MOABB Zhou2020 loader.",
+  "methods_description": "EEG was recorded with a Neuroscan SynAmps2 system using Ag/AgCl electrodes, Cz reference and AFz ground, sampled at 500 Hz with online 0.5-100 Hz bandpass and 50 Hz notch filtering. Each of 7 daily sessions had 6 runs of 40 trials, with 5 s cued trials for four classes: left hand, right hand, feet and rest.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -31,10 +31,12 @@
       "term": "longitudinal study"
     },
     {
-      "term": "common spatial patterns"
+      "term": "Imagination",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D007092"
     },
     {
-      "term": "multi-session"
+      "term": "common spatial pattern"
     }
   ],
   "related_identifiers": [
@@ -62,6 +64,11 @@
       "identifier": "https://nemar.org/dataset/nm000237",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.21227/f1c7-7x89",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "resource_type_general": "Dataset",
@@ -70,7 +77,7 @@
     "eeg"
   ],
   "sizes": [
-    "93.10 GB (1687 files)"
+    "111 GB (2520 files)"
   ],
   "formats": [
     ".bdf",
@@ -82,5 +89,5 @@
     ".yml",
     ".zip"
   ],
-  "source_hash": "87c9b377852b625e89103971b4750045ee79c3d25ed6fec536c026c0c192bf5f"
+  "source_hash": "4bddfe8257b61afcda280279c02c85aed5ed4a31e6fc4f2c4b2a1ef7c1c97c68"
 }
