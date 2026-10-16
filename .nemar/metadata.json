@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "7-day motor imagery BCI EEG dataset from Zhou et al 2021",
-  "description": "A longitudinal EEG dataset of motor imagery brain-computer interface (MI-BCI) recordings from 20 healthy participants across 7 sessions on separate days, without feedback training. Participants imagined left-hand, right-hand and both-feet movements, or rested, in response to visual arrow cues. EEG was recorded at 500 Hz with a Neuroscan SynAmps2 amplifier (41 EEG channels plus 2 EOG channels), yielding 33,600 trials. The data are provided in BIDS format with HED event annotations, regenerated via the MOABB Zhou2020 loader.",
-  "methods_description": "EEG was recorded with a Neuroscan SynAmps2 system using Ag/AgCl electrodes, Cz reference and AFz ground, sampled at 500 Hz with online 0.5-100 Hz bandpass and 50 Hz notch filtering. Each of 7 daily sessions had 6 runs of 40 trials, with 5 s cued trials for four classes: left hand, right hand, feet and rest.",
+  "description": "A longitudinal EEG dataset of motor imagery brain-computer interface (BCI) use from 20 healthy participants, each recorded over 7 sessions on separate days. Participants performed cued imagery of left hand, right hand, both feet, and idle (rest) states without feedback, giving 33,600 trials recorded at 500 Hz with a Neuroscan SynAmps2 system. This BIDS version was generated with MOABB and includes corrected channel naming, EOG and mastoid channels, and HED event annotations.",
+  "methods_description": "EEG was recorded with a Neuroscan SynAmps2 amplifier (41 electrodes for subjects 1-12, 26 for subjects 13-20, plus hEOG/vEOG) at 500 Hz. Online filtering was 0.5-100 Hz with a 50 Hz notch, referenced to Cz with AFz ground. Each of 7 daily sessions had 6 runs of 40 trials with visual arrow cues for 4 classes (left hand, right hand, feet, rest) and no feedback. Each trial's imagery period lasted 5 s.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -23,20 +23,27 @@
     },
     {
       "term": "Brain-Computer Interfaces",
-      "subject_scheme": "MeSH",
-      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
+      "subject_scheme": "MeSH"
+    },
+    {
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH"
+    },
+    {
+      "term": "Imagination",
+      "subject_scheme": "MeSH"
     },
     {
       "term": "longitudinal study"
     },
     {
-      "term": "Imagination",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D007092"
+      "term": "common spatial patterns"
     },
     {
-      "term": "common spatial pattern"
+      "term": "MOABB"
+    },
+    {
+      "term": "healthy volunteers"
     }
   ],
   "related_identifiers": [
@@ -89,5 +96,5 @@
     ".yml",
     ".zip"
   ],
-  "source_hash": "4bddfe8257b61afcda280279c02c85aed5ed4a31e6fc4f2c4b2a1ef7c1c97c68"
+  "source_hash": "775368bc8cc8a5f116b419fedd24de624e7953137ed0539180c3f39c031d5606"
 }
