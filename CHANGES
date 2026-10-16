@@ -19,4 +19,22 @@
     *_channels.json (free-text description, still accurate) and the
     coordsystem/electrodes.json of subjects 13-20 (float rounding), so the
     change stays within GitHub's pull-request limits.
+  - code/Zhou2020.metadata.yaml: the loader metadata the README is generated from; its channel list and counts
+    (41 -> 41 EEG + 2 EOG) follow the corrected loader. It documents the data and does not run in any pipeline.
+  - dataset_description.json: Version 1.0.3 -> 1.1.0 (minor: channels added and renamed); GeneratedBy MOABB at
+    develop 052ad54 (NeuroTechX/moabb#1269 merged).
   - sourcedata/ unchanged.
+
+1.0.3 2026-08-20
+  - sourcedata/sourcedata_provenance.json: removed the per-file subject attribution (every file had been stamped with the
+    dataset's last subject; per-file attribution is not derivable for this dataset). PR #3.
+
+1.0.2 2026-08-18
+  - sourcedata/sourcedata_provenance.json: subject recorded for each sourcedata file. PR #2.
+
+1.0.1 2026-08-12
+  - Added sourcedata/: the original upstream distribution retrieved via MOABB (Zhou2020), with provenance and SHA-256
+    checksums. PR #1.
+
+1.0.0 2026-06-17
+  - Initial NEMAR release: BIDS conversion of Zhou et al. 2021 (7-day motor imagery BCI) with MOABB 1.5.0.

@@ -24,7 +24,7 @@ The BIDS recordings were regenerated with the corrected MOABB `Zhou2020` loader 
 ## Acquisition
 
 - **Sampling rate**: 500.0 Hz
-- **Number of channels**: 43
+- **Number of channels**: 43 EEG and EOG channels (41 EEG, 2 EOG) on the 41-electrode cap of subjects 1-12, plus the M1/M2 mastoids typed MISC (45 per file); subjects 13-20 have 26 EEG and 2 EOG channels (28 per file)
 - **Channel types**: eeg=41, eog=2
 - **Channel names**: F3, F1, Fz, F2, F4, FC5, FC3, FC1, FCz, FC2, FC4, FC6, C5, C3, C1, Cz, C2, C4, C6, CP5, CP3, CP1, CPz, CP2, CP4, CP6, F5, AF3, AF4, P5, P3, P1, Pz, P2, P4, P6, PO3, POz, PO4, Oz, F6
 - **Montage**: standard_1005
