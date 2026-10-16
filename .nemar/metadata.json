@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "7-day motor imagery BCI EEG dataset from Zhou et al 2021",
-  "description": "A longitudinal EEG dataset of motor imagery brain-computer interface (BCI) use from 20 healthy participants, each recorded over 7 sessions on separate days. Participants performed cued imagery of left hand, right hand, both feet, and idle (rest) states without feedback, giving 33,600 trials recorded at 500 Hz with a Neuroscan SynAmps2 system. This BIDS version was generated with MOABB and includes corrected channel naming, EOG and mastoid channels, and HED event annotations.",
-  "methods_description": "EEG was recorded with a Neuroscan SynAmps2 amplifier (41 electrodes for subjects 1-12, 26 for subjects 13-20, plus hEOG/vEOG) at 500 Hz. Online filtering was 0.5-100 Hz with a 50 Hz notch, referenced to Cz with AFz ground. Each of 7 daily sessions had 6 runs of 40 trials with visual arrow cues for 4 classes (left hand, right hand, feet, rest) and no feedback. Each trial's imagery period lasted 5 s.",
+  "description": "A longitudinal EEG dataset of motor imagery brain-computer interface (BCI) recordings from 20 healthy participants, each recorded over 7 sessions on separate days. Participants performed cued imagery of left hand, right hand, both feet, and rest without feedback, for 33,600 trials in total. Data were recorded at 500 Hz with a Neuroscan SynAmps2 amplifier using 41-electrode or 26-electrode caps, plus EOG channels; the M1/M2 mastoid channels are included as MISC channels for the 41-electrode cap. The data are preprocessed. The BIDS version was regenerated through MOABB with corrected channel names and electrode positions.",
+  "methods_description": "EEG was recorded at 500 Hz with a Neuroscan SynAmps2 amplifier (Ag/AgCl electrodes, Cz reference, AFz ground, 0.5-100 Hz bandpass, 50 Hz notch). Each of 7 daily sessions contained 6 runs of 40 trials. Visual arrow cues prompted 5 s motor imagery of left hand, right hand, feet, or rest, with no feedback.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -26,24 +26,14 @@
       "subject_scheme": "MeSH"
     },
     {
-      "term": "Electroencephalography",
-      "subject_scheme": "MeSH"
-    },
-    {
-      "term": "Imagination",
-      "subject_scheme": "MeSH"
-    },
-    {
       "term": "longitudinal study"
     },
     {
-      "term": "common spatial patterns"
+      "term": "multi-session"
     },
     {
-      "term": "MOABB"
-    },
-    {
-      "term": "healthy volunteers"
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH"
     }
   ],
   "related_identifiers": [
