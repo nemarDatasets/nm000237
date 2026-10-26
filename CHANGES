@@ -1,3 +1,10 @@
+1.1.1 2026-10-26
+  - sourcedata/sourcedata_provenance.json: each of the 853 source files now carries the MOABB
+    subject id (1-20) it belongs to, taken from its S## path token, so a per-subject MOABB load
+    fetches only that subject's files. File paths, byte counts and SHA-256 values are unchanged;
+    no recording or source file changed.
+  - dataset_description.json: Version 1.1.0 -> 1.1.1.
+
 1.1.0 2026-10-14
   - Regenerated all BIDS recordings with the corrected MOABB Zhou2020 loader
     (https://github.com/NeuroTechX/moabb/pull/1269, issue
